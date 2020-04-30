@@ -1,0 +1,74 @@
+html,body{
+  height: 100%;
+}
+header {
+  width: 100%;
+  height: 30%;
+  background-image:url("../images/web_agency.png");
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F1F1F1;
+
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* La couleur du point de menu change au survol de celui-ci */
+nav li a:hover {
+  background-color: #5F5F5F;
+  color:white;
+}
+
+section {
+height:100%;
+}
+
+/*Au-dessus de 600pixels de largeur d'écran, la zone article est à gauche et occupe 65% de l'espace disponible.
+Un padding est paramétré à droite pour que le texte de la zone article ne soit pas collé à celui de la zone aside.
+*/
+article {
+width:65%;
+float:left;
+padding-right:20px;
+}
+
+/*Au-dessus de 600pixels de largeur d'écran, la zone aside est à gauche de la zone article
+et occupe 30% de l'espace disponible.*/
+aside {
+width:30%;
+float:left;
+}
+
+footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+}
+
+
+/* Jusqu'à 600 pixels de largeur d'écran, la largeur de des zones article et aside sont de 100%. Ces zones prendront
+donc toute la largeur disponible sur l'écran. Elles seront affichées l'une en-dessous de l'autre. */
+@media screen and (max-width:600px) {
+article, aside {
+    width: 100%;
+  }
+}

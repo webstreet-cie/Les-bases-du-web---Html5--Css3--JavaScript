@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Types de données en JavaScript</h1>
+  <h2>Ouvrez la console JavaScript pour voir les résultats.</h2>
+
+<script>
+  //les types de données sont dynamiques en JavaScript
+  var y;           // Maintenant y est undefined
+  y = 23;           // Maintenant y est un Number
+  y = "Roxane";      // Maintenant y est un String
+  console.log(y);
+
+  //Il existe 6 types primitifs en JavaScript: String, Number, Boolean, Null, Undefined, Symbol
+
+  //string
+  var fruit = "orange";   // Utiliser les doubles guillemets
+  var fruit = 'peach';   // Utiliser les guillemets simples
+
+  var answer1 = "It's alright";             // Single quote inside double quotes
+  var answer2 = "He is called 'George'";    // Single quotes inside double quotes
+  var answer3 = 'He is called "George"';    // Double quotes inside single quotes
+
+  //numbers
+  var x1 = 129.00;     // Written with decimals
+  var x2 = 129;        // Written without decimals
+
+//scientific notation
+  var x = 129e5;      // 12900000
+  var y = 129e-5;     // 0.00129
+
+  //booleans
+var x = 12;
+var y = 12;
+var z = 6;
+console.log(x == y)       // Retourne true
+console.log(x == z)       // Retourne false
+
+//null
+var x = null;
+if (x === null) {
+console.log("The value is null");
+}
+
+//undefined
+var age;
+age = undefined;
+age = "";
+
+//typeof
+console.log("Typeof fruit is:"+ typeof fruit);
+
+
+
+</script>
+
+</body>
+</html>

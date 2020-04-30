@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Explorer le DOM en utilisant JavaScript</h1>
+<h2>Mes belles images</h2>
+<img src="images/temoignage1.jpg"/>
+<img src="images/temoignage2.jpg"/>
+<img src="images/temoignage3.jpg"/>
+
+<script type = "text/javascript">
+for(var i = 0; i < document.images.length; i++){
+  document.write(document.images[i].src);
+    document.write("<br>");
+}
+
+</script>
+
+</body>
+</html>

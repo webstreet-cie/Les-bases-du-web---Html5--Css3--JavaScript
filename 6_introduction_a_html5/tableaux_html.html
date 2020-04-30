@@ -1,0 +1,127 @@
+﻿<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <Titre>Tableaux html5</Titre>
+
+	<style>
+		hgroup h1 {
+		font-size:30px;
+		font-weight:bold;
+		color:#3C7A9E;
+		}
+
+		hgroup h2 {
+		font-size:26px;
+		font-weight:bold;
+		color:#4BA4D1;
+		}
+
+		#article_content h1 {
+		font-size:20px;
+		font-weight:bold;
+		color: #C00;
+		}
+
+		#article_content h2 {
+		font-size:16px;
+		font-weight:bold;
+		color:#C6F;
+		}
+
+		table {
+		width:800px;
+		text-align:center;
+    border-collapse: collapse;
+		}
+
+		table, th, td {
+		border:1px solid black;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div id="content">
+	   <article>
+		 <header>
+		   <hgroup>
+			<h1>La balise &lt;table&gt;</h1>
+			<h2>Tableaux en HTML5</h2>
+		   </hgroup>
+		  </header>
+		  <hr>
+
+		  <div id="article_content">
+          <h1>Tableau Simple</h1>
+          <table>
+           <caption>Charles Aznavour - Live</caption>
+              <thead>
+                 <tr><th>Titre</th><th>Langue</th></tr>
+               </thead>
+               <tbody>
+                  <tr><td>You and me</td><td>Anglais</td></tr>
+                  <tr><td>La bohême</td><td>Français</td></tr>
+                  <tr><td>Venezia Sin Ti</td><td>Italien</td></tr>
+                </tbody>
+           </table>
+
+         <h1>Tableau avec colspan</h1>
+
+         <table>
+           <tr>
+               <th>Titre de film</th>
+               <th>Pour enfants ?</th>
+               <th>Pour adultes ?</th>
+            </tr>
+           <tr>
+               <td>Scream</td>
+               <td >Non, trop violent</td>
+               <td>Oui</td>
+            </tr>
+           <tr>
+               <td>Shrek 2</td>
+               <td>Oui</td>
+               <td>Pas assez violent...</td>
+            </tr>
+            <tr>
+                 <td>Camping Paradise</td>
+                 <td colspan="2">Pour toute la famille !</td>
+            </tr>
+        </table>
+
+        <h1>Tableau avec rowspan</h1>
+        <table>
+           <tr>
+               <th>Titre de film</th>
+               <td>Scream</td>
+               <td>Shrek 2</td>
+               <td>Camping Paradise</td>
+           </tr>
+           <tr>
+               <th>Pour enfants ? </th>
+               <td>Non, trop violent</td>
+               <td>Oui</td>
+               <td rowspan="2">Pour toute la famille !</td>
+            </tr>
+           <tr>
+              <th>Pour adultes ?</th>
+              <td>Yes</td>
+              <td>Pas assez violent...</td>
+            </tr>
+        </table>
+
+          </div>
+
+
+	   </article>
+
+
+	</div>
+
+
+</body>
+</html>

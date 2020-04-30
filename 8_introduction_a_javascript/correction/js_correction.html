@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+  var a=5;
+  var b=6;
+  </script>
+
+<h1>JavaScript Correction</h1>
+<h2>Créer une boucle simple</h2>
+<script type = "text/javascript">
+      var items = 10;
+      document.write("Commencer la boucle " + "<br />");
+      for(items=10;items>=0;items--) {
+         document.write("Traitement de l'élément n° : " + items + "<br />");
+      }
+      document.write("Tous les éléments ont été traités ! Fin de boucle !");
+</script>
+
+<h2>Créer une condition pour afficher les jours de la semaine</h2>
+<script type = "text/javascript">
+  switch (new Date().getDay()) {
+      case 0:
+       day = "Dimanche";
+       break;
+      case 1:
+       day = "Lundi";
+       break;
+      case 2:
+        day = "Mardi";
+       break;
+      case 3:
+       day = "Mercredi";
+       break;
+      case 4:
+       day = "Jeudi";
+       break;
+      case 5:
+       day = "Vendredi";
+       break;
+      case 6:
+       day = "Samedi";
+      }
+
+  document.write("Aujourd'hui c'est "+day+"!");
+</script>
+
+<h2>Créer une pop-up demandant le nom de l'internaute et l'affichant dans le navigateur web à la fermeture
+de la fenêtre</h2>
+<script>
+  function nameFunction() {
+    var name = "";
+    name = window.prompt("Quel est votre nom ?");
+   document.getElementById("para").innerHTML = "Votre nom est " + name;
+  }
+
+
+</script>
+
+<button type="button" onclick="nameFunction()">Cliquez ici</button>
+<p id="para"></p>
+
+<h2>Convertir des fahrenheit en celsius et des celsius en fahrenheit</h2>
+
+<script>
+  function fToC(fahrenheit)
+  {
+    var fTemp = fahrenheit;
+    var fToCel = (fTemp - 32) / 1.8;
+    var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';
+      document.write(message);
+      document.write("<br>");
+  }
+
+  function cToF(celsius)
+  {
+    var cTemp = celsius;
+    var cToFahr = cTemp * 1.8 + 32;
+    var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
+      document.write(message);
+      document.write("<br>");
+  }
+
+cToF(20);
+fToC(60);
+</script>
+
+<h2>Créer un objet JavaScript et le manipuler</h2>
+<script>
+  var rectangle = {
+      width: 20,
+      height: 10,
+      getPerimeter: function() {
+         return (this.width + this.height)*2;
+      },
+      getArea: function() {
+         return this.width * this.height;
+      }
+  };
+
+  document.write(rectangle.getPerimeter());
+    document.write("<br>");
+  document.write(rectangle.getArea());
+    document.write("<br>");
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<html>
+<body>
+
+
+
+
+
+<h4>Trouver des éléments HTML par l'id</h4>
+<p id="test"></p>
+
+
+<h4>Trouver des éléments HTML par nom de balise</h4>
+<section>
+Bonjour, comment allez-vous ?
+</section>
+
+<section id="demoSection">
+</section>
+
+<h4>Trouver des éléments HTML par nom de classe</h4>
+<section class="sectionClass">
+  C'est la première sectionClass.
+</section>
+
+<section class="sectionClass">
+    C'est la deuxième sectionClass.
+</section>
+
+<p id="demoClass">
+</p>
+
+<h4>Trouver des éléments HTML par sélecteur CSS</h4>
+
+<p class="cssSelector">
+  1er sélecteur CSS
+</p>
+<p class="cssSelector">
+  2nd sélecteur CSS
+</p>
+<p class="cssSelector">
+  3ème sélecteur CSS
+</p>
+
+<p id="demoCssSelector">
+
+</p>
+
+<h4>Utiliser l'interface HTMLCollection</h4>
+
+<form id="myForm" action="/action_page.php">
+  Prénom : <input type="text" name="fname" value="Steve"><br>
+  Nom : <input type="text" name="lname" value="Jobs"><br><br>
+  <input type="submit" value="Lancer">
+</form>
+
+<p>Cliquez sur "Essayer" pour montrer la valeur de chaque élément du formulaire.</p>
+
+<button onclick="displayObjectValues()">Essayer</button>
+
+<p id="objectCollectionDemo"></p>
+
+<script>
+document.getElementById("test").innerHTML = "Ecrire dans le paragraphe avec id=test";
+document.getElementsByTagName("section").innerHTML = "Ecrire dans les balises section ";
+
+var x = document.getElementsByTagName("section");
+document.getElementById("demoSection").innerHTML =
+'Le texte de la 1ère section (index 0)  est : ' + x[0].innerHTML;
+
+var y = document.getElementsByClassName("sectionClass");
+document.getElementById("demoClass").innerHTML =
+'La 1ère section (index 0) avec class="sectionClass" est : ' + y[0].innerHTML;
+
+var z = document.querySelectorAll("p.cssSelector");
+document.getElementById("demoCssSelector").innerHTML =
+'Le 1er paragraphe (index 0) avec class="cssSelector" est : ' + z[0].innerHTML;
+
+function displayObjectValues() {
+  var x = document.forms["myForm"];
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("objectCollectionDemo").innerHTML = text;
+}
+
+</script>
+
+</body>
+</html>
