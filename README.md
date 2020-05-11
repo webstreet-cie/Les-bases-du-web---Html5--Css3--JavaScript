@@ -1,2 +1,2 @@
 # Les bases du web - Html5, Css3, JavaScript
- Ce dépôt contient tous les exercices liés au livre "Les bases du web - Html5, Css3, JavaScript", vendu sur Amazon. Ce livre est protégé et déposé à l'INPI. Toute reproduction est interdite. Seuls les exercices sont mis gratuitement à disposition. Pour acheter le livre : https://www.amazon.fr/bases-web-Html5-Css3-JavaScript-ebook/dp/B08177F6GT/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=les+bases+du+web&qid=1588256281&sr=8-1
+ Ce dépôt contient tous les exercices liés au livre "Les bases du web - Html5, Css3, JavaScript", vendu sur Amazon. Ce livre est protégé et déposé à l'INPI. Toute reproduction est interdite. Seuls les exercices sont mis gratuitement à disposition. 
